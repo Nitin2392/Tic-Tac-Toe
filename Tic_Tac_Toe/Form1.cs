@@ -56,6 +56,11 @@ namespace Tic_Tac_Toe
 
         private void newGameToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            freshGame();
+        }
+
+        private void freshGame()
+        {
             value = true;
             countForDraw = 0;
             try
@@ -135,12 +140,14 @@ namespace Tic_Tac_Toe
                     winner = "O"; //We print in reverse since flag changes T/F after click
                 else
                     winner = "X";
-                MessageBox.Show("Congrats! " + winner + " wins","Winner");                
+                MessageBox.Show("Congrats! " + winner + " wins","Winner");
+                freshGame();
             }
 
             else if (countForDraw == 9) //Game is draw
             {
                 MessageBox.Show("Draw!");
+                freshGame();
             }
 
         }
