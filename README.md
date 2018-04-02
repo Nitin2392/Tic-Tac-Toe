@@ -5,4 +5,9 @@ Tic-tac-toe (also known as noughts and crosses or Xs and Os) is a paper-and-penc
 
 I have tried to make a simple yet robus WinForms C# application that allows users to play as X and O. 
 
+Future Updates:
+* Ensure game has scores 
+* Make player play against computer
+* Increase matrix dimensions to 5 * 5
+
 Sample Output shown [here](https://github.com/Nitin2392/Tic-Tac-Toe/blob/master/OutputSample.png)
