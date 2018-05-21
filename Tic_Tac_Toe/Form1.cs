@@ -126,7 +126,7 @@ namespace Tic_Tac_Toe
             {
                 try
                 {
-                    foreach (Control c in Controls)
+                    foreach (Control c in Controls) // Go through each control
                     {
                         Button disableAll = (Button)c;
                         disableAll.Enabled = false;
